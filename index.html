@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inner-container">
+      <h1>B.M.I Calculator</h1>
+    </div>
+    <section>
+      <div class="container-table">
+        <table>
+          <tr>
+            <th>BMI (kg/m&sup2;)</th>
+            <th>Class</th>
+          </tr>
+          <tr>
+            <td><18.5</td>
+            <td>Underweight</td>
+          </tr>
+          <tr>
+            <td>18.5 - 24.9</td>
+            <td>Normal</td>
+          </tr>
+          <tr>
+            <td>25.0 - 29.9</td>
+            <td>Overweight</td>
+          </tr>
+          <tr>
+            <td>30.0 - 34.9</td>
+            <td>Obesity(1st Class)</td>
+          </tr>
+          <tr>
+            <td>35.0 - 39.9</td>
+            <td>Obesity(2nd Class)</td>
+          </tr>
+          <tr>
+            <td>>40.0</td>
+            <td>Extreme Obesity(3rd Class)</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <main>
+      <div class="container-input">
+        <div class="mini-container">
+          <h3>Let's calculate your BMI</h3>
+          <br />
+          <form>
+            <label for="age">Age: </label>
+            <input
+              type="text"
+              name="age"
+              id="age"
+              placeholder="Enter your Age"
+              required
+            />
+            <label for="weight">Weight: </label>
+            <input
+              type="text"
+              name="weight"
+              id="weight"
+              placeholder="Enter your Weight in KG"
+              required
+            />
+            <label for="weight">Height: </label>
+            <input
+              type="text"
+              name="Height"
+              id="height"
+              placeholder="Enter your Height in meter"
+              required
+            />
+            <input type="submit" value="submit" id="submit"/>
+            <input type="reset" value="Reset" id="reset"/>
+          </form>
+        </div>
+      </div>
+      <div class="container-result">
+        <p class="msg hide"></p>
+      </div>
+    </main>
+    <div class="tips-container">
+      <h2>BMI Categories and Health Risks:</h2>
+      <br />
+      <p>
+        <b>Underweight (BMI < 18.5):</b> May experience nutritional deficiencies
+        and other health problems.
+      </p>
+      <p>
+        <b>Healthy Weight (BMI 18.5-24.9):</b> Considered a healthy weight range
+        with minimal health risks.
+      </p>
+      <p>
+        <b>Overweight (BMI 25-29.9):</b> May have an increased risk of
+        developing health problems like heart disease and type 2 diabetes.
+      </p>
+      <p>
+        <b>Obese (BMI 30 or higher):</b> Significantly increased risk of
+        developing serious health conditions.
+      </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

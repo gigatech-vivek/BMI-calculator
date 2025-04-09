@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.inner-container{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Table styling */
+table,th,td {
+    border: 1px solid #ffffff;
+}
+.container-table {
+    margin-top: 1vmin;
+    height: 40vh;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Input field styling */
+.container-input {
+    height: 40vh;
+    width: 50vh;
+    border: 1px solid red;
+    margin-top: 5px;
+    padding: 5px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    border-bottom: 2px solid red;
+}
+input[type=submit] {
+    padding: 8px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+input[type=reset] {
+    padding: 8px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+
+/* Tips section styling */
+.tips-container {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1.5rem;
+}
+
+.hide{
+    display: none;
+}
